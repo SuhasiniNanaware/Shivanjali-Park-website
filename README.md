@@ -40,7 +40,7 @@ The project serves as both a real business website and a software engineering po
 
 ### Hosting
 
-* Netlify (Deployment)
+* Vercel (Deployment)
 
 ### Version Control
 
