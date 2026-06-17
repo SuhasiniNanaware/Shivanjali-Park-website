@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Brahmanḍanāyak Developers | Shivanjali Park – Farmhouse Plots Pune</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=500;700;900&family=DM+Sans:wght=300;400;500;600&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    
+    <style>
+        /* Helper styles to ensure the hamburger menu toggles correctly */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Mobile menu alignment tweaks */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+
+        #mobile-menu a {
+            text-decoration: none;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        /* Desktop view fix: always hide mobile menu on big screens */
+        @media (min-width: 768px) {
+            .md\:hidden {
+                display: none !important;
+            }
+        }
+
+        /* Responsive structural adjustments for Hero Layout Section */
+        @media (max-width: 991px) {
+            .hero {
+                flex-direction: column !important;
+                /* FIXED: Adjusted to line up flush beneath the navbar header */
+                padding-top: 72px !important; 
+                min-height: auto !important;
+            }
+            .hero-content {
+                max-width: 100% !important;
+                /* FIXED: Set top padding to 0px to completely close the upper blank gap */
+                padding: 0px 5% 25px !important; 
+                text-align: center;
+            }
+            .hero-actions {
+                justify-content: center !important;
+            }
+            .hero-image-container {
+                width: 100% !important;
+                height: 320px !important;
+                /* FIXED: Maintained 0 horizontal padding to remove the side white spaces */
+                padding: 0 0 40px !important; 
+            }
+            .hero-image-container img {
+                border-top-left-radius: 40px !important;
+                border-radius: 20px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo" onclick="window.location.href='index.html'">
+    <img src="assets/logo.png" alt="Brahmanḍanāyak Developers" class="nav-logo-img">
+    <div class="nav-brand">
+      <span class="nav-brand-en">Brahmanḍanāyak Developers</span>
+      <span class="nav-brand-mr">ब्रह्मांडनायक डेव्हलोपर्स</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+    <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+    <a href="location.html" class="nav-link" id="nav-location">Location</a>
+    <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+    <a href="about.html" class="nav-link" id="nav-about">About Us</a>
+    <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+  </div>
+  <button class="nav-cta" onclick="window.location.href='tel:7387515907'">📞 Call Team</button>
+  <div class="hamburger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="hidden md:hidden" style="position:fixed; top:72px; left:0; right:0; z-index:999; background:rgba(15,31,18,0.98); padding:20px 5%; border-bottom:1px solid rgba(255,255,255,0.1);">
+  <a href="index.html" style="display:block; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08); color:white;">Home</a>
+  <a href="projects.html" style="display:block; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08); color:white;">Projects</a>
+  <a href="location.html" style="display:block; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08); color:white;">Location</a>
+  <a href="gallery.html" style="display:block; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08); color:white;">Gallery</a>
+  <a href="about.html" style="display:block; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08); color:white;">About Us</a>
+  <a href="contact.html" style="display:block; padding:14px 0; color:white;">Contact</a>
+  <button class="nav-cta" onclick="window.location.href='tel:7387515907'" style="width:100%; margin-top:15px; padding:12px;">📞 Call Sales Team</button>
+</div>
+
+<div class="page active" id="page-home">
+
+<section class="hero" style="display:flex; align-items:center; min-height:100vh; position:relative; overflow:hidden;">
+  <div class="hero-bg"></div>
+  <div class="hero-particles">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-content" style="flex:1; padding:120px 5% 80px; max-width:700px; z-index:2;">
+    <div class="hero-badge">Trusted Since 2024 · Alandi Mhatoba, Pune</div>
+    <h1 class="hero-title">Own Your <span>Dream</span><br/>Farmhouse Plot</h1>
+    <span class="hero-marathi">शिवांजली पार्क</span>
+    <p class="hero-sub">Premium farmhouse plots near Pune–Solapur Highway. 5 km from Alandi Mhatoba. Cement compound, natural surroundings, and a great investment opportunity.</p>
+    <div class="hero-actions" style="display:flex; gap:12px;">
+      <button class="btn-primary" onclick="window.location.href='projects.html'">Explore Plots</button>
+      <button class="btn-outline" onclick="window.location.href='contact.html'">Talk to Us</button>
+    </div>
+  </div>
+
+  <div class="hero-image-container" style="flex:1; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+    <img src="assets/bg.jpeg" 
+         alt="Shivanjali Park Premium Farmhouse Plots" 
+         style="width:100%; height:100%; object-fit:cover; border-top-left-radius:80px; box-shadow: -20px 0 40px rgba(0,0,0,0.3);">
+    
+    <div style="position:absolute; bottom:40px; left:40px; right:40px; background:rgba(26,58,31,0.85); color:white; padding:16px 24px; border-radius:12px; backdrop-filter:blur(8px); max-width:280px; margin: 0 auto;">
+      <strong style="font-size:18px;">Premium Farmhouse Plots</strong><br>
+      <small>Starting ₹3,99,000/- per Guntha</small>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">Why Invest</div>
+  <h2 class="section-title">Everything You Need<br/>in One Plot</h2>
+  <p class="section-sub">Shivanjali Park is designed for nature lovers, weekend home seekers, and smart investors looking for growing returns near Pune.</p>
+  
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon green">
+        <img src="assets/tree.png" alt="Natural Surroundings" style="width:58px; height:58px; object-fit:contain;">
+      </div>
+      <div class="feature-title">Natural Surroundings</div>
+      <div class="feature-desc">Wake up to fresh air, greenery, and a peaceful environment away from city noise yet close to Pune.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon gold">
+        <img src="assets/wall.png" alt="Cement Compound Wall" style="width:58px; height:58px; object-fit:contain;">
+      </div>
+      <div class="feature-title">Cement Compound Wall</div>
+      <div class="feature-desc">Each plot comes with a proper cement compound wall for security and clear demarcation.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon blue">
+        <img src="assets/investment.png" alt="High Investment" style="width:55px; height:55px; object-fit:contain;">
+      </div>
+      <div class="feature-title">High Investment Returns</div>
+      <div class="feature-desc">Land near Pune–Solapur highway is appreciating rapidly. Get in early for maximum value growth.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon green">
+        <img src="assets/location.png" alt="Prime Location" style="width:55px; height:55px; object-fit:contain;">
+      </div>
+      <div class="feature-title">Prime Location</div>
+      <div class="feature-desc">Just 5 km from Alandi Mhatoba and the Pune–Solapur highway - accessible from everywhere in Pune.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon gold">
+        <img src="assets/legal.png" alt="Legal Verified" style="width:55px; height:55px; object-fit:contain;">
+      </div>
+      <div class="feature-title">Legal & Verified</div>
+      <div class="feature-desc">All documents, clear titles, and legal verification handled transparently. Buy with full confidence.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon blue">
+        <img src="assets/family.png" alt="Trusted Business" style="width:55px; height:55px; object-fit:contain;">
+      </div>
+      <div class="feature-title">Trusted Family Business</div>
+      <div class="feature-desc">A family-owned business with years of trust. We guide you through every step of the purchase process.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-tag">Current Project</div>
+  <h2 class="section-title">Shivanjali Park</h2>
+  <p class="section-sub">Our flagship farmhouse plotting project — limited plots, exceptional value, and the perfect canvas for your dream weekend home.</p>
+  
+  <div class="projects-grid" style="max-width:480px; margin: 0 auto 0 0;">
+    <div class="project-card">
+      <div class="project-img" style="position:relative;">
+        <img src="assets/plot.jpeg" alt="Shivanjali Park" style="width:100%; height:100%; object-fit:cover;">
+        <div class="project-badge">AVAILABLE</div>
+      </div>
+      
+      <div class="project-body">
+        <div class="project-name">Shivanjali Park</div>
+        <div class="project-loc">📍 Alandi Mhatoba, Pune</div>
+        <div class="project-price">₹3,99,000<span style="font-size:16px;font-weight:400;color:var(--muted)">/guntha</span></div>
+        <div class="project-price-note">*Limited plots available</div>
+        
+        <div class="project-features">
+          <span class="project-feature-tag">🏗️ Cement Compound</span>
+          <span class="project-feature-tag">🌳 Natural Environment</span>
+          <span class="project-feature-tag">🛣️ Highway Access</span>
+          <span class="project-feature-tag">🏡 Farmhouse Zone</span>
+        </div>
+        
+        <div class="project-actions">
+          <button class="btn-sm btn-sm-primary" onclick="window.location.href='projects.html'">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="section-tag" style="color:var(--lime);">Happy Customers</div>
+  <h2 class="section-title" style="color:var(--white);">What Our Buyers Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-text">"We bought two plots at Shivanjali Park. The process was completely transparent — documents, pricing, everything was clear. Highly recommend this family!"</div>
+      <div class="testimonial-author">Rajesh Patil</div>
+      <div class="testimonial-loc">Hadapsar, Pune</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-text">"The location is perfect — just 5 km from the highway, peaceful greenery. We're building our weekend farmhouse here. Value for money is unmatched."</div>
+      <div class="testimonial-author">Sunita Deshmukh</div>
+      <div class="testimonial-loc">Kothrud, Pune</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-text">"These developers are trustworthy. They showed us all documents, explained everything, and the cement compound wall was already built. Very professional."</div>
+      <div class="testimonial-author">Vikram Shinde</div>
+      <div class="testimonial-loc">Swargate, Pune</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;background:var(--cream);position:relative;overflow:hidden;">
+  <div class="section-tag" style="margin: 0 auto 12px; justify-content:center;background:#D4AF37;color:#fff;">Limited Plots Left</div>
+  <h2 class="section-title" style="font-size:32px;letter-spacing:-0.5px;">Don't Miss This Opportunity</h2>
+  <p class="section-sub" style="margin:0 auto 36px;max-width:540px;color:rgba(15,81,50,0.85);font-weight:500;">Plots are selling out faster than expected. Secure your future asset today—submit an inquiry now and our elite project team will contact you within 24 hours.</p>
+  <div style="display:flex;justify-content:center;">
+    <button 
+      class="btn-primary" 
+      onclick="window.location.href='tel:7387515907'"
+      style="font-size:16px;padding:16px 40px;background:#0F5132;color:#fff;border:none;border-radius:12px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;box-shadow:0 10px 25px rgba(15,81,50,0.25);cursor:pointer;transition:all 0.3s ease;" 
+    >
+      ✨ Secure Your Plot Now
+    </button>
+  </div>
+</section>
+
+</div> 
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Brahmanḍanāyak Developers</div>
+      <div class="footer-brand-mr">ब्रह्मांडनायक डेव्हलोपर्स · विश्वसनीय प्लॉट आणि गुंतवणूक</div>
+      <div class="footer-brand-desc">Premium farmhouse plotting projects near Pune. Legal, affordable, and beautifully located land for every family's dream.</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Projects</h4>
+      <a href="projects.html">Shivanjali Park</a>
+      <a href="projects.html">Upcoming Projects</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:7387515907">📞 73875 15907</a>
+      <a href="tel:9975329999">📞 99753 29999</a>
+      <a href="https://wa.me/917387515907">💬 WhatsApp</a>
+      <a href="https://maps.app.goo.gl/uu5Xqma93osGbPXbA" target="_blank">📍 Alandi Mhatoba, Pune</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Brahmanḍanāyak Developers. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917387515907" class="wa-fab" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
