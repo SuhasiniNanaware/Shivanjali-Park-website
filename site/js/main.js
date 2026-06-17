@@ -66,7 +66,7 @@ async function handleFormSubmit(event) {
     form.style.display = 'none';
     if (successMessage) {
       successMessage.style.setProperty('display', 'block', 'important');
-      successMessage.innerText = "✅ Saved to Database! We'll call you shortly.";
+      successMessage.innerText = "✅ We'll call you shortly.";
     }
 
     // Reset the modal interface seamlessly back to normal after 4 seconds
